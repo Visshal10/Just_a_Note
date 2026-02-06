@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For You</title>
+
+  <style>
+    :root {
+      --bg1: #fdfbfb;
+      --bg2: #ebedee;
+      --card: rgba(255,255,255,0.9);
+      --text: #1f2937;
+      --soft: #6b7280;
+      --accent: #f472b6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      padding: 16px;
+    }
+
+    .card {
+      max-width: 720px;
+      width: 100%;
+      background: var(--card);
+      border-radius: 22px;
+      padding: 28px 24px 34px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+      text-align: center;
+      animation: fadeIn 0.8s ease;
+    }
+
+    h1 {
+      font-size: clamp(22px, 4vw, 34px);
+      margin: 0 0 10px;
+    }
+
+    .soft-line {
+      font-size: 15px;
+      color: var(--soft);
+      margin-bottom: 18px;
+    }
+
+    .emoji-burst {
+      font-size: 34px;
+      margin: 10px 0 22px;
+      animation: float 2.5s ease-in-out infinite;
+    }
+
+    .message {
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.7;
+      white-space: pre-line;
+      animation: slideUp 0.9s ease;
+    }
+
+    .signature {
+      margin-top: 22px;
+      font-size: 14px;
+      color: var(--soft);
+      text-align: right;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <h1>Just a small message</h1>
+    <div class="soft-line">Take a moment. This is for you 🤍</div>
+
+    <div class="emoji-burst">🌸✨🌷💐✨🌸</div>
+
+    <div class="message">
+Hii Sneha.
+Good morning 🤍
+I just want to say, please don't take too much stress about results.
+Jyare thi aapnu prelims nu result aavyu che tyare thi atyare sudhi me tara mate bv prayers Kari che, ane aju pn karu j chu, ke taru to clear thavu j joiye.
+I know k amuk vaar bv vadhare confusing stressful situation thai jaay, but ahiya sudhi aavya chiye to aagad pn badhu saru j thase.
+Just have faith.
+And I am really really proud of you Sneha, and I am always here to help you, to cheer you, and also to tease ofcourse. 😁
+(And haan, aa hu tane impress karva nathi kehto, (Thai jaay to to bv saru) bs atle k, just trust our Jesus.)
+    </div>
+
+    <div class="signature">
+      — Always cheering for you 🌷
+    </div>
+  </main>
+</body>
+</html>
